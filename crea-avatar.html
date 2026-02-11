@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu Avatar | Atelier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><img src="./logo-atelier.png" alt="Logo Atelier" class="logo-img"></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="test-estilo.html" class="nav-link">Encuentra tu Estilo</a></li>
+                <li><a href="disena-estilo.html" class="nav-link">Diseña tu Estilo</a></li>
+                <li><a href="crea-avatar.html" class="nav-link active">Crea tu Avatar</a></li>
+                <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+
+            </ul>
+        </nav>
+        
+        <div class="user-logged-menu">
+            <span class="user-greeting">HOLA, CRIS</span>
+            <div class="user-avatar-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <a href="index.html" class="logout-link" style="text-decoration:none; color: inherit;"> <button id="btn-logout" class="logout-link">SALIR</button> </a>
+        </div>
+    </header>
+
+
+    <main class="creator-container">
+        <div class="creator-header">
+            <h1 class="section-title">CREA TU AVATAR</h1>
+            <p class="section-subtitle">DEFINE TU IDENTIDAD VIRTUAL</p>
+        </div>
+
+        <div class="iframe-wrapper">
+            <iframe
+                id="frame"
+                class="rpm-frame"
+                src="https://atelier-mvp.readyplayer.me/avatar?frameApi"
+                allow="camera *; microphone *; clipboard-write"
+                title="Editor de Avatar">
+            </iframe>
+        </div>
+    </main>
+
+
+    <script>
+        const frame = document.getElementById('frame');
+
+        window.addEventListener('message', function(event) {
+            const json = event.data;
+            
+            // Verificamos que venga de Ready Player Me
+            if (json.source === 'readyplayerme') {
+                
+                // Cuando el usuario termina de crear el avatar
+                if (json.eventName === 'v1.avatar.exported') {
+                    const avatarUrl = json.data.url;
+                    
+                    // Guardamos la URL
+                    localStorage.setItem('atelierAvatarUrl', avatarUrl);
+                    
+                    // Redirigimos al inicio
+                    window.location.href = 'index.html';
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

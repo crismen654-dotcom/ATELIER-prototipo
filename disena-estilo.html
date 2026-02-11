@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Estudio de Diseño</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+          <a href="index.html"> <img src="logo-atelier.png" alt="Logo Atelier" class="logo-img">
+    </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="test-estilo.html" class="nav-link">Encuentra tu Estilo</a></li>
+                <li><a href="disena-estilo.html" class="nav-link active">Diseña tu Estilo</a></li>
+                <li><a href="crea-avatar.html" class="nav-link">Crea tu Avatar</a></li>
+                <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+    
+            </ul>
+        </nav>
+        <div class="user-logged-menu">
+    <span class="user-greeting">HOLA, CRIS</span>
+    <div class="user-avatar-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    </div>
+    <button id="btn-logout" class="logout-link">SALIR</button>
+</div>
+        </div>
+    </header>
+
+    <main class="studio-container">
+        <section class="design-view">
+            <div class="view-header">
+                <h3>Vista de Diseño</h3>
+                <div class="view-icons">
+                    <span>↺</span> <span>♡</span>
+                    <span>🔗</span>
+                </div>
+            </div>
+            
+            <div class="model-canvas">
+                <div class="garment-placeholder">
+                    <img src="./polo-diseño.png" alt="Diseño de polo" class="design-view-image">
+                </div>
+                <div class="active-material-tag">Material: Algodón</div>
+            </div>
+
+            <div class="design-summary">
+                <div><span>Color</span><br><strong>Azul</strong></div>
+                <div><span>Material</span><br><strong>Seda</strong></div>
+                <div><span>Largo</span><br><strong>Medio (65cm)</strong></div>
+            </div>
+        </section>
+
+        <aside class="customization-panel">
+            <h3>Panel de Personalización</h3>
+            
+            <div class="panel-section">
+                <h4>Color</h4>
+                <div class="color-grid">
+                    <div class="color-option selected" style="background-color: #1a1a1a;">✓</div>
+                    <div class="color-option" style="background-color: #333333;"></div>
+                    <div class="color-option" style="background-color: #808080;"></div>
+                    <div class="color-option" style="background-color: #e0e0e0;"></div>
+                    <div class="color-option" style="background-color: #2c3e50;"></div>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h4>Material</h4>
+                <div class="material-list">
+                    <label class="material-card active">
+                        <input type="radio" name="material" checked>
+                        <strong>Algodón</strong>
+                        <small>Transpirable y cómodo</small>
+                    </label>
+                    <label class="material-card">
+                        <input type="radio" name="material">
+                        <strong>Seda</strong>
+                        <small>Suave y lujosa</small>
+                    </label>
+                    <label class="material-card">
+                        <input type="radio" name="material">
+                        <strong>Lana</strong>
+                        <small>Elegante y cálida</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="flex-between">
+                    <h4>Largo</h4>
+                    <span>Medio</span>
+                </div>
+                <input type="range" min="50" max="80" value="65" class="length-slider">
+                <div class="flex-between slider-labels">
+                    <small>50cm</small>
+                    <small>80cm</small>
+                </div>
+            </div>
+
+            <div class="pricing-section">
+                <div class="flex-between">
+                    <span>Precio Estimado</span>
+                    <span class="price">$400</span>
+                </div>
+                <p class="disclaimer">El precio final puede variar según especificaciones y diseñador.</p>
+                
+                <button class="button button-primary blue-bg full-width">Solicitar Diseño</button>
+                <button class="button button-secondary full-width mt-10">Guardar como Borrador</button>
+            </div>
+
+            <div class="tips-box">
+                <h4>Consejos de Diseño</h4>
+                <ul>
+                    <li>Los colores neutros son versátiles.</li>
+                    <li>La seda es ideal para eventos formales.</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Encuentra tu Estilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="main-header">
+        <div class="logo">
+        <a href="index.html"> <img src="logo-atelier.png" alt="Logo Atelier" class="logo-img">
+    </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                
+                <li><a href="test-estilo.html" class="nav-link active">Encuentra tu Estilo</a></li>
+                
+                <li><a href="disena-estilo.html" class="nav-link">Diseña tu Estilo</a></li>
+                <li><a href="crea-avatar.html" class="nav-link">Crea tu Avatar</a></li>
+                <li><a href="comunidad.html" class="nav-link">Comunidad</a></li>
+            </ul>
+        </nav>
+        <div class="user-logged-menu">
+    <span class="user-greeting">HOLA, CRIS</span>
+    <div class="user-avatar-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    </div>
+    <button id="btn-logout" class="logout-link">SALIR</button>
+</div>
+        </div>
+    </header>
+
+    <main class="test-container">
+        <div class="progress-section">
+            <h2>Encuentra tu Estilo</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 15%;"></div>
+            </div>
+            <p class="step-indicator">Paso 1 de 5</p>
+        </div>
+
+        <div class="question-card">
+            <h3>¿Qué paleta de colores te atrae más?</h3>
+            <p class="question-subtitle">Selecciona la gama de colores que más resuena con tu personalidad y estilo hoy.</p>
+
+            <form id="style-quiz-form">
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="color_palette" value="calidos">
+                        <div class="option-content">
+                            <h4>Cálidos</h4>
+                            <div class="color-swatches">
+                                <span style="background:#D2B48C"></span>
+                                <span style="background:#CD5C5C"></span>
+                                <span style="background:#E9967A"></span>
+                                <span style="background:#F5DEB3"></span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="option-card">
+                        <input type="radio" name="color_palette" value="frios">
+                        <div class="option-content">
+                            <h4>Fríos</h4>
+                            <div class="color-swatches">
+                                <span style="background:#708090"></span>
+                                <span style="background:#778899"></span>
+                                <span style="background:#B0C4DE"></span>
+                                <span style="background:#F0F8FF"></span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="option-card active-card">
+                        <input type="radio" name="color_palette" value="neutros" checked>
+                        <div class="option-content">
+                            <div class="check-icon">✓</div>
+                            <h4>Neutros</h4>
+                            <div class="color-swatches">
+                                <span style="background:#1a1a1a"></span>
+                                <span style="background:#ffffff; border:1px solid #ccc"></span>
+                                <span style="background:#C0C0C0"></span>
+                                <span style="background:#8b8682"></span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="option-card">
+                        <input type="radio" name="color_palette" value="vibrantes">
+                        <div class="option-content">
+                            <h4>Vibrantes</h4>
+                            <div class="color-swatches">
+                                <span style="background:#DC143C"></span>
+                                <span style="background:#00FF7F"></span>
+                                <span style="background:#FF8C00"></span>
+                                <span style="background:#8A2BE2"></span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="quiz-navigation">
+                    <a href="index.html" class="button button-secondary">← Volver al Inicio</a>
+                    <button type="button" class="button button-primary blue-bg">Siguiente →</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

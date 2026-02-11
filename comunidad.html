@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Comunidad e Inspiración</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+        <a href="index.html"> <img src="logo-atelier.png" alt="Logo Atelier" class="logo-img">
+    </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="test-estilo.html" class="nav-link">Encuentra tu Estilo</a></li>
+                <li><a href="disena-estilo.html" class="nav-link">Diseña tu Estilo</a></li>
+                <li><a href="crea-avatar.html" class="nav-link">Crea tu Avatar</a></li>
+                <li><a href="comunidad.html" class="nav-link active">Comunidad</a></li>
+
+            </ul>
+        </nav>
+        <div class="user-logged-menu">
+    <span class="user-greeting">HOLA, CRIS</span>
+    <div class="user-avatar-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    </div>
+    <button id="btn-logout" class="logout-link">SALIR</button>
+</div>
+        </div>
+    </header>
+
+    <main class="community-container">
+        
+        <section class="community-hero">
+            <h1>Inspiración Global</h1>
+            <p>Descubre los diseños creados por la comunidad. <br>¿Te gusta algo? <strong>Personalízalo y hazlo tuyo.</strong></p>
+            
+            <div class="filter-tags">
+                <button class="filter-tag active">Tendencias</button>
+                <button class="filter-tag">Minimalista</button>
+                <button class="filter-tag">Streetwear</button>
+                <button class="filter-tag">Gala</button>
+                <button class="filter-tag">Sostenible</button>
+            </div>
+        </section>
+
+        <section class="feed-grid">
+            
+            <article class="feed-card">
+                <div class="card-image">
+                    <span class="badge digital">✨ Diseño 3D</span>
+                    <img src="https://via.placeholder.com/400x500/1a1a1a/ffffff?text=Abrigo+Tech" alt="Diseño">
+                    <div class="card-overlay">
+                        <a href="disena-estilo.html" class="button button-primary blue-bg">Personalizar este Look</a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="creator">
+                        <div class="avatar">JM</div>
+                        <span>@JuanModa</span>
+                    </div>
+                    <div class="stats">
+                        <span>♡ 1.2k</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="feed-card">
+                <div class="card-image">
+                    <span class="badge real">🧵 Fabricado</span>
+                    <img src="https://via.placeholder.com/400x600/f0f0f0/333333?text=Vestido+Seda+Real" alt="Foto Real">
+                    <div class="card-overlay">
+                        <a href="disena-estilo.html" class="button button-primary blue-bg">Pedir similar</a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="creator">
+                        <div class="avatar">AS</div>
+                        <span>@AnaStyle</span>
+                    </div>
+                    <div class="stats">
+                        <span>♡ 850</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="feed-card">
+                <div class="card-image">
+                    <span class="badge digital">✨ Diseño 3D</span>
+                    <img src="https://via.placeholder.com/400x450/007bff/ffffff?text=Traje+Futurista" alt="Diseño">
+                    <div class="card-overlay">
+                        <a href="disena-estilo.html" class="button button-primary blue-bg">Personalizar este Look</a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="creator">
+                        <div class="avatar">Cyber</div>
+                        <span>@CyberPunk</span>
+                    </div>
+                    <div class="stats">
+                        <span>♡ 2.1k</span>
+                    </div>
+                </div>
+            </article>
+
+             <article class="feed-card">
+                <div class="card-image">
+                    <span class="badge real">🧵 Fabricado</span>
+                    <img src="https://via.placeholder.com/400x550/333/fff?text=Chaqueta+Denim" alt="Foto Real">
+                    <div class="card-overlay">
+                        <a href="disena-estilo.html" class="button button-primary blue-bg">Pedir similar</a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="creator">
+                        <div class="avatar">Lu</div>
+                        <span>@LuciaDesign</span>
+                    </div>
+                    <div class="stats">
+                        <span>♡ 500</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        
+        <div class="load-more-container">
+            <button class="button button-secondary">Cargar más inspiración</button>
+        </div>
+
+    </main>
+</body>
+</html>
